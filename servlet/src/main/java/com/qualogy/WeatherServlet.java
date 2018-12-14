@@ -23,8 +23,13 @@ public class WeatherServlet extends HttpServlet {
 
 	public void printWeather(HttpServletResponse response, WeatherService weatherService) throws IOException {
 
+		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
+		out.println("<pre>");
+		out.println("Weather forecast Dutch cities.");
+		out.println("Example: http://localhost:8080/servlet/weather?q=Rotterdam\n");
 		out.println( weatherService.getWeatherFormatted() );
+		out.println("</pre>");
 		out.flush();
 		out.close();
 
