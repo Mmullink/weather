@@ -18,7 +18,7 @@ public class WeatherServlet extends HttpServlet {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-;
+
 	}
 
 	public void printWeather(HttpServletResponse response, WeatherService weatherService) throws IOException {
