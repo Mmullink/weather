@@ -53,14 +53,14 @@ public class WeatherService {
     public String formatWeather(WeatherObject weatherObject) {
 
         String forecast = "";
-        forecast += "Stad: \t\t" + weatherObject.getCity() + "\n";
-        forecast += "Beschrijving: \t" + weatherObject.getDescription() + "\n";
-        forecast += "Temperatuur: \t" + weatherObject.getTemp() + "\n";
-        forecast += "Druk: \t\t" + weatherObject.getPressure() + "\n";
-        forecast += "Vochtigheid: \t" + weatherObject.getHumidity() + "\n";
-        forecast += "Windkracht: \t" + weatherObject.getWind() + "\n";
-        forecast += "Zonsopgang: \t" + weatherObject.getSunrise() + "\n";
-        forecast += "Zonsondergang: \t" + weatherObject.getSunset() + "\n";
+        forecast += "City: \t\t" + weatherObject.getCity() + "<br>";
+        forecast += "Description: \t" + weatherObject.getDescription() + "<br>";
+        forecast += "Temperature: \t" + weatherObject.getTemp() + "<br>";
+        forecast += "Pressure: \t" + weatherObject.getPressure() + "<br>";
+        forecast += "Humidity: \t" + weatherObject.getHumidity() + "<br>";
+        forecast += "Wind power: \t" + weatherObject.getWind() + "<br>";
+        forecast += "Sunrise: \t" + weatherObject.getSunrise() + "<br>";
+        forecast += "Sunset: \t" + weatherObject.getSunset() + "<br>";
 
         return forecast;
 

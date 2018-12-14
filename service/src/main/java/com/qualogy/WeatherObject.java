@@ -20,7 +20,7 @@ public class WeatherObject {
 		JSONObject obj = new JSONObject(jsonContent);
 		this.description = obj.getJSONArray("weather").getJSONObject(0).getString("description");
 		double temp = Math.round( obj.getJSONObject("main").getDouble("temp") * 10 ) / 10;
-		this.temp = "" + (temp - 273);
+		this.temp = temp - 273 + " &#8451;C";
 		this.pressure = obj.getJSONObject("main").getInt("pressure") + "mbar";
 		this.humidity = obj.getJSONObject("main").getInt("humidity") + "%";
 		this.wind = obj.getJSONObject("wind").getDouble("speed") + " Bf";
